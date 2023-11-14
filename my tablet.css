@@ -1,0 +1,135 @@
+/* body{
+    flex-direction: column;
+    align-items: center;
+} */
+.start{
+    background: #0d3f54;
+    padding: 0;
+    visibility: hidden;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+}
+
+
+nav{
+
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    /* margin-left: 10px; */
+    padding-right: 200px;
+
+}
+
+
+.navbar a{
+    
+ font-weight: 100;  
+ flex-wrap: wrap;
+ justify-content:space-evenly;
+ margin-right: 30px;
+
+
+}
+
+
+/* heading */
+.heading{
+    font-size: 1.5rem;
+
+}
+
+
+/* about */
+
+#pic{
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#pic img{
+    width: 475px;
+    height: 300px;
+}
+
+#intro h2{
+    text-align: center;
+    padding: 10px;
+
+}
+.jhamela {
+    margin-left: 310px;
+    margin-right:380px;
+
+}
+.button a{
+    width: 150px ;
+    font-size: 10px;
+    padding: 40px;
+    text-align:left;
+
+    
+}
+
+
+/* skill section */
+
+.box{
+    padding: 50px;
+    width: 295px;
+    height: 670px;
+}
+
+/* education */
+#education{
+    padding:0;
+    display: inline;
+    text-align: center;
+    
+}
+.column{
+    display: grid;
+    grid-template-columns: 0;
+    /* padding-left: 0; */
+    width: 10px;
+   
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 220px;
+    height: 520px;
+    
+}
+
+/* project */
+
+.gallery{
+    margin-right: 10px;
+}
+
+
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin-left: 0px;
+    border: 5px solid #4a98a9;
+    border-radius: 12px;
+}
+
+
+/* contact */
+
+.input{
+    width: 60%;
+}
+#message{
+    width: 20%;
+}
+#send{
+    width: 20%;
+}
