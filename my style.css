@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    
+    background:#101935;
+    color: aliceblue;
+}
+   
+
+.start{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo{
+    font-size: 25px;
+    color:#d79a14;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+font-size: 18px;
+ color: white; 
+text-decoration: none;
+font-weight: bold;
+margin-right: 20px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0; 
+}
+
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%; 
+    background-image: url( emma\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+   
+}
+
+.content{ 
+    max-width: 400px;
+   
+
+}
+
+.content h1{
+    font-size:50px;
+    font-weight: 200;
+    line-height: 1.2;
+}
+.content h3{
+    font-size: 30px;
+    font-weight: 400;
+     /* color:#d37a07  ; */
+     color: #00abf0;
+    
+}
+.content p{
+    font-size: 19px;
+    font-weight: 400;
+    color: #f5f5f8;
+    margin: 20px 0 40px;
+   
+}
+
+
+.icon{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 40px;
+    width: 170px;
+    
+}
+.icon a{
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.icon a:hover{
+    color: #081b29;
+
+}
+
+.icon a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+.icon a:hover::before{
+    width: 100%;
+}
+
+
+/* ABOUT me section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 250px;
+}
+
+ .heading{
+    text-align: center; 
+    font-size: 35px;
+    line-height: 170px ;            
+}
+
+#pic{
+    display: flex;
+    margin-left: 8px;
+    padding:50px;
+}
+
+#pic img{
+    width: 575px;
+    height: 450px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    padding: 20px;
+    margin-left: 30px;
+    max-width: 1000px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#intro p{
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.button{
+    width: 950px;
+    height: 20px;
+    background: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  
+ 
+}
+
+.button a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    width: 300px;
+    height: 50px;
+    background:  #13a8e3; 
+  
+    border: 2px solid;
+    border-style: dashed;
+    border-radius: 25px;
+    font-size: 25px;
+    color: #fafafc;
+    text-decoration: none;
+    
+}
+.button a:hover{
+    background:  #f4f4f9;
+    color: #162997;
+}
+
+  /* project section */
+
+
+#PROJECTS{
+    display: flex;
+    flex-direction: column;
+    background-color: #101935;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    box-sizing: border-box;
+  
+}
+
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+    border: 5px solid #4a98a9;
+    border-radius: 12px;
+
+}
+
+       /* SKILL section */
+
+#skill{
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+
+}
+
+.row{
+    display: flex;
+    color: black;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 30px;
+    align-items: center;
+    text-align: justify;
+    padding: 30px;
+    border-radius: 25px;
+    background: linear-gradient(to top, #546d8f, 50%,   #13a8e3 50%);
+    background-size: 100% 200%;
+    margin-bottom: 50px;
+    transition: all .8s;
+}
+ .box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0,0,20px #1058d3;
+}
+.box img{
+    height: 50px;
+}
+
+/* EDUCATION section */
+
+#education{
+    display: grid;
+    /* -direction: column; */
+    background-color: #042e32;
+}
+#education h1{
+    margin: 60px;
+}
+.column{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    padding-left: 50px;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    height: 340px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align:justify;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(to top, #8B9EB7, 50%,   #5A5A66 50%);
+    background-size: 100% 200%;
+    margin-bottom: 200px;
+    transition: all .9s;
+    /* background: linear-gradient(to top, #6C7558, 50%,   #5A5A66 50%); */
+}
+ .container:hover{
+    background-position: left bottom;
+    /* color: black; */
+
+    color: #2e062d;
+    border: none;
+    box-shadow: 0,0,20px #3e6097;
+}
+.container h2{
+    color: #F7ECE19;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* contact section */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #150118;
+    color: #fafafc;
+    padding: 20px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    outline: none;
+    border: 2px solid;
+    border-style: dotted;
+}
+#message{
+    padding: 10px;
+    margin: 15px;
+    width: 20%;
+    outline:none;
+
+    border: 2px solid;
+    border-style: dotted;
+}
+#send{
+    padding: 10px;
+    margin: 40px;
+    width: 10%;
+    outline: none;
+
+    border: 2px solid;
+    border-style: dotted;
+}
+#send:hover{
+    cursor:alias;
+    box-shadow: 0 0 10px white;
+}
