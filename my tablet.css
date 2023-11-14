@@ -79,7 +79,6 @@ nav{
 /* skill section */
 
 .box{
-    margin-left: 150px;
     padding: 50px;
     width: 295px;
     height: 670px;
@@ -102,9 +101,9 @@ nav{
 .container{
     display:flex;
     flex-direction: column;
-    width: 300px;
-    height: 380px;
-    margin: 70px;
+    width: 220px;
+    height: 520px;
+
 }
 
 /* project */
